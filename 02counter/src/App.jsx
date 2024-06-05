@@ -7,19 +7,15 @@ function App() {
   let [counter, setCounter] = useState(15);
 
    const addValue = () =>{
-    if(counter < 20){
-      setCounter(counter + 1)
-    }else{
-      alert("Limit exceeded")
+      setCounter((prevCounter) => prevCounter + 1 )
+      setCounter((prevCounter) => prevCounter + 1 )
+      setCounter((prevCounter) => prevCounter + 1 )
+      setCounter((prevCounter) => prevCounter + 1 )
     }
-   }
+
 
    const removeValue = () =>{
-      if(counter > 0){
         setCounter(counter - 1)
-      }else{
-        alert("Limit exceeded")
-      }
    }
 
   return (
